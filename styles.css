@@ -1,0 +1,110 @@
+*{box-sizing: border-box;
+
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#container{
+height: 450px;
+width: 600px;
+display: flex;
+overflow: hidden;
+border-radius: 20px;
+
+flex-wrap:wrap;
+}
+
+.item{
+    width: 50%;
+    height: 100%;
+}
+
+.smell{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.description{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.subtitle{
+    color: hsl(228, 12%, 48%);
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+width: 98%;
+margin-top: 10%;
+margin-bottom: none;
+}
+
+.name{
+    color: hsl(0, 0%, 0%);
+
+    font-family: 'Fraunces', serif;
+font-weight: 700;
+font-size: 2rem;
+margin-top: 2%;
+margin-bottom: 2%;
+width: 80%;
+}
+
+.price{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.sale{
+    height: 100%;
+    margin-top: 1%;
+    font-size: 0.8rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    margin: 10% 0;
+    border: none;
+
+}
+
+@media(max-width:376px){
+    #container{
+        flex-direction: column;
+align-items: center;
+width: 90%;
+        height: auto;
+        margin: 0;
+    }
+
+    .item{
+        width:100%;}
+
+    }
+
+
